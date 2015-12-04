@@ -1,0 +1,23 @@
+{
+  "name": "tweet-collector-supervisor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusbo/tweet-collector-supervisor.git"
+  },
+  "author": "Vinícius Borriello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusbo/tweet-collector-supervisor/issues"
+  },
+  "homepage": "https://github.com/viniciusbo/tweet-collector-supervisor#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "tweet-collector": "^2.1.1"
+  }
+}
