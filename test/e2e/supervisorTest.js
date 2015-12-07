@@ -4,7 +4,7 @@ var TweetCollector = require('tweet-collector');
 var twitterCredentials = require('../fixtures/twitterCredentials')
 
 describe('Tweet Collector Supervisor', function() {
-  var supervisor;
+  var supervisor, collectorId = Date.now();
 
   before(function(done) {
     supervisor = new Supervisor();
@@ -14,7 +14,7 @@ describe('Tweet Collector Supervisor', function() {
         search_params: {
           q: 'test'
         }
-      }), Date.now());
+      }), collectorId);
     }
 
     done();
@@ -26,9 +26,9 @@ describe('Tweet Collector Supervisor', function() {
   });
 
   it('should fetch some data', function(done) {
-    supervisor.on('fetch', function(tweets, collectorId) {
+    supervisor.on('fetch', function(id, tweets) {
       expect(tweets).to.be.array;
-      expect(collectorId).to.be.not.null;
+      expect(id).to.be.eql(collectorId);
       done();
     });
   });

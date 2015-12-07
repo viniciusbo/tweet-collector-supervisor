@@ -1,8 +1,8 @@
 {
   "name": "tweet-collector-supervisor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/supervisor.js",
   "scripts": {
     "test": "mocha --recursive --timeout 5000"
   },
