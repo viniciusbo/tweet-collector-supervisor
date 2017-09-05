@@ -1,6 +1,6 @@
 # Tweet Collector Supervisor
 
-Easier handler for multiple Tweet Collector instances.
+Easier handler for multiple Tweet Collector instances. See [tweet-collector](https://github.com/viniciusbo/tweet-collector) package.
 
 ```javascript
 var Supervisor = require('tweet-collector-supervisor');
